@@ -1,4 +1,3 @@
-// Camada de acesso ao backend: tipos + a chamada HTTP num só lugar.
 const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
 export interface User {

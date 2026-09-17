@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { fetchUsers, type FetchResult } from "./api";
 
-// Converte "1, 2, 3" -> [1, 2, 3], descartando o que não for inteiro positivo.
 function parseIds(text: string): number[] {
   return text
     .split(",")
@@ -55,13 +54,12 @@ export function App() {
         </button>
       </form>
 
-      {/* Estado: carregando */}
+
       {loading && <p className="muted">Consultando usuários…</p>}
 
-      {/* Estado: erro do backend */}
       {error && <p className="error" role="alert">{error}</p>}
 
-      {/* Estado: resultado (encontrados + falhados) */}
+
       {result && (
         <div className="results">
           <section>

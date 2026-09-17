@@ -1,8 +1,3 @@
-"""Configuração da aplicação, lida de variáveis de ambiente com defaults sãos.
-
-Mantida simples de propósito (sem dependência extra): num desafio pequeno,
-um objeto de settings legível vale mais que um framework de config.
-"""
 import os
 
 

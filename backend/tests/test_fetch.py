@@ -1,8 +1,3 @@
-"""Testes obrigatórios do desafio.
-
-Exercitam o `fetch_users` real, trocando só o provider por um Fake — o que
-também comprova que a regra de negócio independe de HTTP.
-"""
 import pytest
 
 from app.providers.fake_provider import FakeUserProvider
