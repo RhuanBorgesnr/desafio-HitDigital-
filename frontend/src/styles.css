@@ -1,0 +1,70 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #f6f7f9;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 { font-size: 1.5rem; }
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.form label {
+  flex-basis: 100%;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.form input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form button {
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form button:disabled { background: #9db8f0; cursor: not-allowed; }
+
+.muted { color: #777; }
+.error {
+  color: #b91c1c;
+  background: #fee2e2;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+}
+
+.results { display: grid; gap: 1.5rem; }
+
+.results ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.4rem; }
+.results li {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+.results .failed li { border-color: #fca5a5; background: #fef2f2; }
